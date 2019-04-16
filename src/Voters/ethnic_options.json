@@ -1,0 +1,12 @@
+[
+ 	{
+ 		"value" : "",
+ 		"display_value" : ""
+	}, 	{
+ 		"value" : "HL",
+ 		"display_value" : "Hispanic / Latino"
+	},{
+ 		"value" : "NL",
+ 		"display_value" : "Not Hispanic"
+	}
+]

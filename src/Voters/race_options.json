@@ -1,0 +1,27 @@
+[
+ 	{
+ 		"value" : "",
+ 		"display_value" : ""
+	}, 	{
+ 		"value" : "B",
+ 		"display_value" : "Black / African American"
+	},{
+ 		"value" : "I",
+ 		"display_value" : "American Indian / Alaska Native"
+	},{
+ 		"value" : "O",
+ 		"display_value" : "Other race"
+	},{
+ 		"value" : "W",
+ 		"display_value" : "White"
+	},{
+ 		"value" : "U",
+ 		"display_value" : "Undesignated race"
+	},{
+ 		"value" : "A",
+ 		"display_value" : "Asian"
+	},{
+ 		"value" : "M",
+ 		"display_value" : "Two or more races"
+	}
+]
