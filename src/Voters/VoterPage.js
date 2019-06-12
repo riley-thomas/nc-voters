@@ -169,7 +169,7 @@ class VoterPage extends Component {
 	}
 
 	renderFilterToggle() {
-		return (<Row onClick={()=>{this.expand()}}><Col className="cursor-default"><FontAwesomeIcon icon="filter" /> Show/Hide Filters</Col><Col className="text-right"><Badge>{this.state.data.numFound || 0} Records</Badge></Col></Row>);
+		return (<Row onClick={()=>{this.expand()}}><Col className="cursor-default"><FontAwesomeIcon icon="filter" /> Show/Hide Filters</Col><Col className="text-right"><Badge>{this.state.data.numFound.toLocaleString() || 0} Records</Badge></Col></Row>);
 	}
 
 	renderFilters() {
