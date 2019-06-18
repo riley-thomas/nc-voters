@@ -37,7 +37,7 @@ class VoterDetailPage extends Component {
 			}		
         }).catch((e)=> { 
         	this.setState({error : 'Error'}, ()=> { console.error(e)})
-        }).finally(()=> {
+        }).then(()=> {
         	this.getVoterHistory();
         });
 	}
@@ -49,7 +49,7 @@ class VoterDetailPage extends Component {
 			}		
         }).catch((e)=> { 
         	this.setState({error : 'Error'}, ()=> { console.error(e)})
-        }).finally(()=> {
+        }).then(()=> {
         	this.stopWorking();
         });
  	}

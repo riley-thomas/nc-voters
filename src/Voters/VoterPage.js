@@ -14,6 +14,7 @@ import GenderOptions from './gender_options.json';
 import PartyOptions from './party_options.json';
 import BirthStateOptions from './us_states.json';
 
+
 class VoterPage extends Component {
 
 	constructor(props) {
@@ -59,7 +60,7 @@ class VoterPage extends Component {
         }).catch((e)=> { 
         	this.cookies.set('filters_values', null ,{ path : '/', expires : moment().add(-1, 'days').toDate() });
         	this.setState({error : 'Error'}, ()=> {	console.error(e)});
-        }).finally(()=> {
+        }).then(()=> {
         	this.stopWorking();
         });
 	}

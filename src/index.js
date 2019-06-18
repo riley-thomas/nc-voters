@@ -6,9 +6,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import $ from 'jquery';
 import './Utils/FAImport.js';
+import './Utils/Polyfill.js';
 import './css/nc.css';
 import './css/style.css';
-
 window.jQuery = $;
 window.$ = $;
 
