@@ -9,7 +9,7 @@ class Menu extends Component {
       <div className='d-print-none'>
         <Navbar className="fixed-top navbar navbar-dark bg-primary" expand="md">
           <div className="nc-logo"></div>
-          <NavbarBrand href="/" className="mr-auto d-none d-lg-inline">{Config.app_title}</NavbarBrand>
+          <NavbarBrand href={Config.app_home} className="mr-auto">{Config.app_title}</NavbarBrand>
         </Navbar>
       </div>
     );

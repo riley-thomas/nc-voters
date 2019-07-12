@@ -18,10 +18,10 @@ class VoterTable extends Component {
 				let mapurl = "https://www.google.com/maps/search/?api=1&query=" + query;
 				map = (<a href={mapurl} target='new_window' title="Opens map in another window"><FontAwesomeIcon icon='map-marked-alt' /></a>);
 			}
-    		let phone = v.hasOwnProperty('full_phone_number') ? <PhoneNumber>{v.full_phone_number[0]}</PhoneNumber> : '';
+    		let phone = v.hasOwnProperty('full_phone_number') ? <PhoneNumber>{v.full_phone_number}</PhoneNumber> : '';
 	   		return (
-	   			<tr id={'voter_'+v.ncid[0]} key={v.ncid[0]}>
-	   				<td><Link to={'/voter/'+v.ncid[0]}>{v.ncid[0]}</Link></td>
+	   			<tr id={'voter_'+v.ncid} key={v.ncid}>
+	   				<td><Link to={'/voter/'+v.ncid}>{v.ncid}</Link></td>
 	   				<td title={v.voter_status_reason_desc || v.voter_status_desc}>{v.voter_status_desc}</td>
 	            	<td>{v.last_name}</td><td>{v.first_name}</td><td>{v.middle_name}</td>
 	            	<td>{v.gender_code}</td>

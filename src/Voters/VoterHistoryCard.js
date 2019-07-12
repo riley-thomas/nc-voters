@@ -15,13 +15,13 @@ class VoterHistoryCard extends Component {
 			}
 
 			const history = [].concat(rows)
-	    	.sort((a, b) => moment(a.election_lbl[0],"MM-DD-YYYY").isBefore(moment(b.election_lbl[0],"MM-DD-YYYY")) ? 1 : -1)
+	    	.sort((a, b) => moment(a.election_lbl[0],"MM-DD-YYYY").isBefore(moment(b.election_lbl,"MM-DD-YYYY")) ? 1 : -1)
 	    	.map((v,k) =>{
-	    		let election = v.hasOwnProperty('election_desc') ? v.election_desc[0].toLowerCase() : '';
-	    		let county = v.hasOwnProperty('county_desc') ? v.county_desc[0].toLowerCase() : '';
-	    		let pct = v.hasOwnProperty('pct_description') ? v.pct_description[0].toLowerCase() : '';
-	    		let party = v.hasOwnProperty('voted_party_desc') ? v.voted_party_desc[0].toLowerCase() : '';
-	    		let method = v.hasOwnProperty('voting_method') ? v.voting_method[0].toLowerCase() : '';
+	    		let election = v.hasOwnProperty('election_desc') ? v.election_desc.toLowerCase() : '';
+	    		let county = v.hasOwnProperty('county_desc') ? v.county_desc.toLowerCase() : '';
+	    		let pct = v.hasOwnProperty('pct_description') ? v.pct_description.toLowerCase() : '';
+	    		let party = v.hasOwnProperty('voted_party_desc') ? v.voted_party_desc.toLowerCase() : '';
+	    		let method = v.hasOwnProperty('voting_method') ? v.voting_method.toLowerCase() : '';
 		   		return (
 		   			<tr id={'vote_'+k} key={k}>
 		   				<td className='text-capitalize'>{election}</td>
